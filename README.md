@@ -1,1 +1,2 @@
-# ppads-project-friends
+# Projeto de Prática Profissional em ADS
+## Grupo: Dos Amigos
