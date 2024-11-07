@@ -44,7 +44,7 @@ O servidor será iniciado na porta padrão (geralmente 3000). Você pode acessar
 
 Após iniciar o servidor, você pode interagir com o projeto da seguinte maneira:
 
-• Preencha o formulário disponível no projeto com as informações necessárias.  \
+• Preencha o formulário disponível no projeto com as informações necessárias. \
 • Clique no botão "Enviar" para processar os dados inseridos. \
 • A saída gerada com base nos dados inseridos será exibida na interface do usuário, no elemento designado para isso.
 
@@ -58,4 +58,4 @@ Exemplo de cliente para consulta pode ser o DB Browser for SQLITE : https://sqli
 
 ## Autor
 
-Desenvolvido por Lucas Yoshio Gonçalves
+Desenvolvido por Grupo dos Amigos
