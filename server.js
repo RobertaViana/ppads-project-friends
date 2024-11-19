@@ -10,6 +10,11 @@ const PORT = process.env.PORT || 3000;
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
+// Rota para a página inicial (DEFINIR ANTES DE `express.static`)
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'homePage.html'));
+});
+
 // Servir arquivos estáticos
 app.use(express.static(path.join(__dirname, 'public')));
 app.use('/assets', express.static(path.join(__dirname, 'assets')));
@@ -31,11 +36,6 @@ const db = new sqlite3.Database('./db/database.sqlite', (err) => {
     )`);
     console.log('Tabela "casos" criada ou já existente.');
   }
-});
-
-// Rota para a página inicial
-app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'index.html'));
 });
 
 // Rota para receber dados do formulário
